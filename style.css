@@ -1,0 +1,120 @@
+/* main-body-section part start */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.container{
+    width:800px;
+    margin:10px;
+    border-radius: 5px;
+    padding:20px;
+   
+}
+body{
+    font-family: 'Luxurious Roman', cursive;
+}
+/* .influencer-part-start */
+button{
+  background-color: rgba(241, 8, 86, 0.753);
+  color:whitesmoke;
+  padding:7px;
+  border-radius: 50px;
+  border:none;
+}
+.moving-influencer a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+h1{
+    font-size: 40px;
+}
+.influencer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 90px;
+}
+.influencer img{
+    height: 300px;
+    width:300px;
+    padding-left: 100px;
+}  
+.moving-influencer:hover{
+    border:2px solid pink;
+}
+/* product-part-start */
+.product img{
+    height: 250;
+    width:220px;
+    border-radius: 10px;
+}
+.fa-star{
+    color:rgb(245, 161, 7);
+    font-size:8px;
+}
+.fa-star-half-alt{
+    color:rgb(251, 167, 9);
+    font-size:8px;
+}
+.product-title{
+    text-align: center;
+}
+.second-container{
+    width:780px;
+    margin:15px;
+    border-radius: 7px;
+    padding:15px;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.product-info{
+    background-color: white;
+    padding:10px;
+    border-radius:10px;
+    margin:10px;
+    box-shadow: 10px 10px 10px gray;
+}
+.e-commerce{
+    display: flex;
+    justify-content: space-evenly;  
+}
+hr{
+    border:1px solid lightgrey;
+}
+.sign{
+    color:rgba(241, 8, 86, 0.753);
+    margin-left:70%;
+}
+.extraordinary img{
+    height:350px;
+    width:350px;
+}
+.extraordinary{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items:center;
+   width:90%;
+   margin-left:60px;
+} 
+.login a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+footer{
+    background-color:rgb(1, 1, 34);
+    height:auto;
+    width:100%;
+    text-align: center;
+    color:white;
+}
+.footvar{
+    font-size:10px;
+}
+.icon{
+    margin-bottom:25px;
+}
+p{
+    font-size:12px;
+}
