@@ -1,4 +1,4 @@
-/* main-body-section part start */
+           /* common styles or utilities part start */
 main{
     display: flex;
     flex-direction: column;
@@ -10,13 +10,18 @@ main{
     width:800px;
     margin:10px;
     border-radius: 5px;
-    padding:20px;
-   
+    padding:20px;   
+}
+.second-container{
+    width:780px;
+    margin:15px;
+    border-radius: 7px;
+    padding:15px;   
 }
 body{
     font-family: 'Luxurious Roman', cursive;
 }
-/* .influencer-part-start */
+             /* .influencer-part-start */
 button{
   background-color: rgba(241, 8, 86, 0.753);
   color:whitesmoke;
@@ -24,7 +29,7 @@ button{
   border-radius: 50px;
   border:none;
 }
-    /* first section anchor tag */
+                /* first section anchor tag */
 .influencer a{
     text-decoration: none;
     color:whitesmoke;
@@ -32,6 +37,7 @@ button{
 h1{
     font-size: 40px;
 }
+                /* Grid templates coloumn */
 .influencer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -45,12 +51,7 @@ h1{
 .moving-influencer:hover{
     border:2px solid pink;
 }
-/* product-part-start */
-.product img{
-    height: 250;
-    width:220px;
-    border-radius: 10px;
-}
+                 /* Star of Icon part start */
 .fa-star{
     color:rgb(245, 161, 7);
     font-size:8px;
@@ -59,16 +60,14 @@ h1{
     color:rgb(251, 167, 9);
     font-size:8px;
 }
+                 /* product collection-part-start */
+.product img{
+    height: 250;
+    width:220px;
+    border-radius: 10px;
+}
 .product-title{
     text-align: center;
-}
-.second-container{
-    width:780px;
-    margin:15px;
-    border-radius: 7px;
-    padding:15px;
-    
-    
 }
 .product{
     display: grid;
@@ -81,6 +80,7 @@ h1{
     margin:10px;
     box-shadow: 10px 10px 10px gray;
 }
+                /* .E-commerce site part start */
 .e-commerce{
     display: flex;
     justify-content: space-evenly;  
@@ -92,6 +92,7 @@ hr{
     color:rgba(241, 8, 86, 0.753);
     margin-left:70%;
 }
+                 /* Extraordinary part start */
 .extraordinary img{
     height:350px;
     width:350px;
@@ -108,6 +109,7 @@ hr{
     text-decoration: none;
     color:whitesmoke;
 }
+                   /* Footer part start */
 footer{
     background-color:rgb(1, 1, 34);
     height:auto;
@@ -124,7 +126,10 @@ footer{
 p{
     font-size:12px;
 }
-
+/*-------------------------------------------
+               Media Queries 
+------------------------------------------*/
+             /* Mobile Devices */
   @media only screen and (max-width:688px){
     .container{
         width:100%;
@@ -165,5 +170,41 @@ p{
     }
 }
 
+                         /* Tablet Devices */
+@media only screen and (min-width:688px)  and (max-width:992px) {
+    .container{
+        width:100%;
+    }
+    .influencer, .product, .extraordinary{
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .e-commerce{
+        flex-direction: column;
+        flex-wrap:wrap;
+        
+    }
+    .extraordinary{
+        margin-left:0%;
+    }
+    h1{
+        font-size:22px;
+    }
+    main{
+        margin-right: 50px;
+        justify-content: center;
+    }
+    .influencer img {
+        height: 200px;
+        width: 200px;
+        padding-left:0px;
+    }
+    .extraordinary img{
+        height:200px;
+        width:200px;
+        padding-left:0%;
+    }
+}
 
 
