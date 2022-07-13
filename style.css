@@ -7,13 +7,13 @@ main{
       
 }
 .container{
-    width:800px;
+    width:100%; 
     margin:10px;
     border-radius: 5px;
     padding:20px;   
 }
 .second-container{
-    width:780px;
+    width:80%;
     margin:15px;
     border-radius: 7px;
     padding:15px;   
@@ -133,7 +133,6 @@ p{
   @media only screen and (max-width:688px){
     .container{
         width:100%;
-        
     }
     .influencer, .product, .extraordinary{
         justify-items: center;
@@ -155,9 +154,6 @@ p{
         justify-content: center;
     }
    
-    main{
-        margin-right: 50px;
-    }
     .influencer img {
         height: 200px;
         width: 200px;
@@ -192,7 +188,6 @@ p{
         font-size:22px;
     }
     main{
-        margin-right: 50px;
         justify-content: center;
     }
     .influencer img {
