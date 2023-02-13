@@ -9,13 +9,11 @@ main{
 .container{
     width:100%; 
     margin:10px;
-    border-radius: 5px;
     padding:20px;   
 }
 .second-container{
-    width:80%;
+    width:100%;
     margin:15px;
-    border-radius: 7px;
     padding:15px;   
 }
 body{
@@ -62,8 +60,8 @@ h1{
 }
                  /* product collection-part-start */
 .product img{
-    height: 250;
-    width:220px;
+    height: 40%;
+    width:100%;
     border-radius: 10px;
 }
 .product-title{
@@ -74,10 +72,9 @@ h1{
     grid-template-columns: repeat(3,1fr);
 }
 .product-info{
-    margin:15px;
     padding:10px;
     border-radius:10px;
-    margin:10px;
+    margin:20px;
     box-shadow: 10px 10px 10px gray;
 }
                 /* .E-commerce site part start */
@@ -90,7 +87,8 @@ hr{
 }
 .sign{
     color:rgba(241, 8, 86, 0.753);
-    margin-left:70%;
+    display: flex;
+    justify-content: end;
 }
                  /* Extraordinary part start */
 .extraordinary img{
@@ -102,8 +100,8 @@ hr{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    align-items:center;
-   width:90%;
-   margin-left:60px;
+   width:100%;
+   padding: 35px;
 } 
 .login a{
     text-decoration: none;
@@ -137,12 +135,10 @@ p{
     .influencer, .product, .extraordinary{
         justify-items: center;
         grid-template-columns: repeat(1,1fr);
-        
     }
     .e-commerce{
         flex-direction: column;
         flex-wrap:wrap;
-        
     }
     .extraordinary{
         margin-left:0%;
@@ -167,19 +163,17 @@ p{
 }
 
                          /* Tablet Devices */
-@media only screen and (min-width:688px)  and (max-width:992px) {
+@media only screen and (min-width:688px) and (max-width:992px) {
     .container{
         width:100%;
     }
     .influencer, .product, .extraordinary{
         justify-items: center;
         grid-template-columns: repeat(2,1fr);
-        
     }
     .e-commerce{
         flex-direction: column;
         flex-wrap:wrap;
-        
     }
     .extraordinary{
         margin-left:0%;
