@@ -6,6 +6,9 @@ main{
     background-color:whitesmoke;
       
 }
+.moving-influencer{
+    width:50%
+}
 .container{
     width:100%; 
     margin:10px;
@@ -35,11 +38,11 @@ button{
 h1{
     font-size: 40px;
 }
-                /* Grid templates coloumn */
+                /* flex */
 .influencer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .influencer img{
     height: 300px;
